@@ -1,0 +1,8 @@
+C:\Users\MV\Source\Repos\University_Database\University_Database\bin\Debug\University_Database.dacpac
+C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\University_Database.sqlprojAssemblyReference.cache
+C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\Model.xml
+C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\refactor.xml
+C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\postdeploy.sql
+C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\predeploy.sql
+C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\University_Database.dll
+C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\University_Database.pdb

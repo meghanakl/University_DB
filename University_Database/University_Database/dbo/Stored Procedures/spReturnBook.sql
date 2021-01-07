@@ -11,7 +11,7 @@ begin
 	 set return_date = GETDATE()
 	 where (barrower_id=@barrower_id and book_id=@book_id)
 	
-	insert into Tbl_Barrowed_Book(id,barrower_id,book_id ,brrowed_Date_time,return_date)
+	insert into Tbl_Barrowed_Book(id,barrower_id,book_id, Barrowed_Date_Time, Return_date)
           values(@id,@barrower_id,@book_id ,@brrowed_Date_time,@return_date)
 end
 

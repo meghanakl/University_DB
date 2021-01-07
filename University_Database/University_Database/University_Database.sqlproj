@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>UniversityDB</Name>
+    <Name>University_Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{25137fd4-daf5-4d50-b725-801aad138a52}</ProjectGuid>
+    <ProjectGuid>{eb6b0307-4268-4958-b80b-612f07431f6b}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>UniversityDB</RootNamespace>
-    <AssemblyName>UniversityDB</AssemblyName>
+    <RootNamespace>University_Database</RootNamespace>
+    <AssemblyName>University_Database</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -56,5 +56,21 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Functions" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Views" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="Publish Profile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Stored Procedures\spInsertBarrowedBook.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertBarrower.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertBook.sql" />
+    <Build Include="dbo\Stored Procedures\spReturnBook.sql" />
+    <Build Include="dbo\Views\vw_LibraryTransaction.sql" />
+    <Build Include="dbo\Tables\Tbl_Barrowed_Book.sql" />
+    <Build Include="dbo\Tables\Tbl_Barrower.sql" />
+    <Build Include="dbo\Tables\Tbl_Book.sql" />
   </ItemGroup>
 </Project>
