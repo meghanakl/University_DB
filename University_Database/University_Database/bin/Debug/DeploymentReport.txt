@@ -1,0 +1,34 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Tbl_Barrower]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Tbl_Barrower].[Barrower_Type] on table [dbo].[Tbl_Barrower] must be added, but the column has no
+         default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this
+         issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of
+         smart-defaults as a deployment option.
+
+** User actions
+     Table rebuild
+       [dbo].[Tbl_Barrower] (Table)
+     Alter
+       [dbo].[spReturnBook] (Procedure)
+     Create
+       [dbo].[spInsertBarrowedBook] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Tbl_Barrower_Tbl_Barrowed_Book] (Foreign Key)
+       [dbo].[FK_Tbl_Book_Tbl_Barrowed_Book] (Foreign Key)
+     Create
+       [dbo].[FK_Tbl_Barrower_Tbl_Barrowed_Book] (Foreign Key)
+       [dbo].[FK_Tbl_Book_Tbl_Barrowed_Book] (Foreign Key)
+     Refresh
+       [dbo].[vw_LibraryTransaction] (View)
+       [dbo].[spInsertBarrower] (Procedure)
+
+The column [dbo].[Tbl_Barrower].[Barrower_Type] on table [dbo].[Tbl_Barrower] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

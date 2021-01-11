@@ -1,13 +1,20 @@
 ﻿
 CREATE  procedure [dbo].[spInsertBarrowedBook]
-          @id int,
+    
            @barrower_id int,
            @book_id int,
-		   @barrowed_Date_time datetime
-           
+		       
+    
     AS
-begin
 
-	insert into spInsertBarrowedBook(id,barrower_id,book_id ,barrowed_Date_time,LastUpdated)
-          values(@id,@barrower_id,@book_id ,@barrowed_Date_time,getdate())
-end
+    begin    
+           if not exists (select * from Tbl_Barrowed_Book where Barrower_id= @barrower_id and Book_id=@book_id)
+    begin
+          insert into Tbl_Barrowed_Book(barrower_id,book_id, Barrowed_Date_Time, Return_date,LastUpdated)
+          values(@barrower_id,@book_id ,getDate(), Null,getdate())
+    end
+else 
+	begin 
+print ('That book already taken by the same barrower so cannot insert')
+    end
+    end

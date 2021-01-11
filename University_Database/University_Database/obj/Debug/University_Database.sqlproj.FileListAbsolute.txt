@@ -6,3 +6,13 @@ C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\postd
 C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\predeploy.sql
 C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\University_Database.dll
 C:\Users\MV\Source\Repos\University_Database\University_Database\obj\Debug\University_Database.pdb
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\bin\Debug\University_Database.dacpac
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\bin\Debug\University_Database.dll
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\bin\Debug\University_Database.pdb
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\obj\Debug\University_Database.sqlprojAssemblyReference.cache
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\obj\Debug\Model.xml
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\obj\Debug\refactor.xml
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\obj\Debug\postdeploy.sql
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\obj\Debug\predeploy.sql
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\obj\Debug\University_Database.dll
+C:\Users\MeghanaRao\git\University_DB\University_Database\University_Database\obj\Debug\University_Database.pdb
