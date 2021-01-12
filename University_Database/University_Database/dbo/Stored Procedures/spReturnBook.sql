@@ -1,14 +1,12 @@
-﻿CREATE  procedure spReturnBook
-       
-           @barrower_id int,
-           @book_id int
-		  
-    as
-begin
-     update  Tbl_Barrowed_Book 
-	 set return_date = GETDATE(), Lastupdated = GETDATE()
-	 where (barrower_id=@barrower_id and book_id=@book_id)
-	
-	
-end
-
+﻿CREATE PROCEDURE spReturnBook @barrower_id INT
+	,@book_id INT
+AS
+BEGIN
+	UPDATE Tbl_Barrowed_Book
+	SET return_date = GETDATE()
+		,Lastupdated = GETDATE()
+	WHERE (
+			barrower_id = @barrower_id
+			AND book_id = @book_id
+			)
+END
